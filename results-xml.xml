@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="3" tests="10" time="0.105" timestamp="2023-06-04T19:18:14.636708" hostname="DESKTOP-FI98O2V"><testcase classname="tests.test_calculator" name="test_add_numbers[30-10-40]" time="0.001" /><testcase classname="tests.test_calculator" name="test_add_numbers[40--10-30]" time="0.001" /><testcase classname="tests.test_calculator" name="test_add_numbers[-60--10--60]" time="0.001"><failure message="assert -70 == -60">num1 = -60, num2 = -10, exp_result = -60
+
+    @pytest.mark.parametrize("num1, num2, exp_result", [(30, 10, 40), (40, -10, 30), (-60, -10, -60)])
+    def test_add_numbers(num1, num2, exp_result):
+        result = Calculator(num1, num2).add_numbers()
+&gt;       assert result == exp_result
+E       assert -70 == -60
+
+tests\test_calculator.py:7: AssertionError</failure></testcase><testcase classname="tests.test_calculator" name="test_substract_numbers" time="0.002" /><testcase classname="tests.test_calculator" name="test_multiply_numbers" time="0.001" /><testcase classname="tests.test_calculator" name="test_division_numbers" time="0.001" /><testcase classname="tests.test_magic" name="test_get_a_number" time="0.001"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="tests.test_magic" name="test_get_a_double" time="0.000"><skipped type="pytest.skip" message="unconditional skip">C:\Users\Lenovo\Desktop\technopeer\python-unit-testing-2\tests\test_magic.py:12: unconditional skip</skipped></testcase><testcase classname="tests.test_magic" name="test_get_a_list" time="0.001"><skipped type="pytest.skip" message="just for testing">C:\Users\Lenovo\Desktop\technopeer\python-unit-testing-2\tests\test_magic.py:17: just for testing</skipped></testcase><testcase classname="tests.test_magic" name="test_get_a_string" time="0.001" /></testsuite></testsuites>
